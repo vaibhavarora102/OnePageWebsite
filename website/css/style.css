@@ -14,7 +14,11 @@ p{
 	line-height: 1.6;
 	font-weight:400;
 	color: #606060;
+	animation: MoveInLeft 1s;
+    backface-visibility: hidden;
 }
+
+
 .extra-div h2, .servicediv h2{
 	font-size: 0.9rem;
 	margin: 20px 0 15 0;
@@ -24,7 +28,7 @@ p{
 }
 
 i{
-	color: :#2fccd0;
+	color: #2fccd0;
 }
 
 
@@ -143,7 +147,7 @@ i{
 
 .serviceoffers{
 	background: #f7f7f9;
-	padding: :50px 0;
+	padding: 50px 0;
 	margin-bottom: 50px;
 }
 
@@ -157,12 +161,14 @@ i{
 	text-transform: uppercase;
 }
 
+
 .names h1{
 	color: #2e2e2e;
-	font-size: :0.9rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
 
 .service-icons{
 	display: flex;
@@ -301,7 +307,7 @@ i{
 
 .box{
 	text-align: center;
-	border: 1px solid rgba(0,0,0,0.1+);
+	border: 1px solid rgba(0,0,0,0.1);
 	box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
 	border-radius: 2px;
 	transition: 0.3s ease;
@@ -409,7 +415,7 @@ i{
 
 form:hover .form-button button{
 background: #fff;
-color: color : #50d1c0;
+color: #50d1c0;
 box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 }
 
@@ -531,3 +537,19 @@ font-size: 0.85rem;
 		margin: 30px 0;
 	}
 }
+
+@keyframes MoveInLeft{
+    0% {
+         opacity: 0;
+         transform: translate(-100px);
+    }
+    80%{
+        transform: translate(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+	}
+}	
+
+
